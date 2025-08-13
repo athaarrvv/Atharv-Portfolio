@@ -144,7 +144,7 @@ document.querySelector("#contactForm").addEventListener("submit", async function
   };
 
   try {
-    const res = await fetch("https://YOUR-BACKEND-URL/contact-message", {
+    const res = await fetch("https://portfolio-contact-backend-lyqg.onrender.com/contact-message", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData)
