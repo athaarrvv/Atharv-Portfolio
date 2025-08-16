@@ -185,3 +185,14 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+function removeCenterMeOnMobile() {
+  if (window.innerWidth <= 768) {
+    document.querySelectorAll('.center-me').forEach(el => {
+      el.classList.remove('center-me');
+    });
+  }
+}
+removeCenterMeOnMobile();
+window.addEventListener('resize', removeCenterMeOnMobile);
